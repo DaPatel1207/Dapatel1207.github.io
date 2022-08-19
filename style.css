@@ -1,0 +1,435 @@
+/* Default */
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	/* converting 1rem = 10px */
+	/* by default 1rem = 16px */
+	font-size: 67.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	background-attachment: fixed;
+	font-family: "Raleway", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: red;
+}
+
+li {
+	list-style: none;
+}
+
+/* End of Default */
+
+.container {
+	width: 97%;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding-bottom: 10rem;
+	
+
+	box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.header-section {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-color: #e4f97a;
+	overflow: hidden;
+}
+
+.content {
+	margin-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #25ceef;
+}
+
+.profile-card {
+	width: 15rem;
+	border-radius: 40%;
+	overflow: hidden;
+}
+
+.profile {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.heading-primary {
+	font-size: 6rem;
+	font-family: "Times new roman", 'Times New Roman', Times, serif;
+}
+
+.me-para {
+	font-size: 2rem;
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.buttons {
+	display: flex;
+	gap: 1.5rem;
+	margin-top: 5rem;
+}
+
+.btn {
+	outline: none;
+	border: 2px solid transparent;
+	padding: 1.3rem 2.5rem;
+	border-radius: 2.5rem;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+	transition: all 0.3s;
+}
+
+.btn:active {
+	transform: translateY(0.5rem);
+}
+
+.btn-1 {
+	background-color: #fff;
+	color: #66bfbf;
+}
+
+.btn-1:hover {
+	border: 2px solid #66bfbf;
+}
+
+.btn-2 {
+	background-color: #66bfbf;
+	color: white;
+}
+
+.btn-2:hover {
+	border: 2px solid #fff;
+}
+
+.img-header {
+	position: absolute;
+}
+
+
+
+.about-me {
+	padding: 10rem 5rem 5rem 5rem;
+	display: flex;
+	gap: 3rem;
+}
+
+.about-box {
+	width: 50%;
+}
+
+.info-box {
+	width: 50%;
+	font-size: 1.5rem;
+}
+
+.about-heading {
+	font-size: 2rem;
+	color: #66bfbf;
+	margin-bottom: 2rem;
+}
+
+.about-box p {
+	font-size: 1.5rem;
+	width: 80%;
+	line-height: 2rem;
+}
+
+.about-date {
+	margin-top: 1rem;
+}
+
+.info-list li p {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-self: flex-start;
+	margin: 1rem 0;
+}
+
+hr {
+	border: dotted 0.8rem #f0f0f0;
+	border-bottom: none;
+	width: 10%;
+	margin: 5rem auto;
+}
+
+.education {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	justify-content: center;
+	align-items: center;
+	padding: 5rem;
+}
+
+.education-heading {
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #66bfbf;
+	margin-bottom: 5rem;
+}
+
+.education-card {
+	display: flex;
+	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+	border-radius: 0.5rem;
+}
+
+.degree-part {
+	flex: 20%;
+	padding: 1.5rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	flex-direction: column;
+	align-items: center;
+	background-color: #66bfbf;
+	color: #fff;
+}
+
+.expected-date {
+	font-size: 1.2rem;
+}
+
+.degree {
+	font-size: 1.6rem;
+}
+
+.degree-details {
+	flex: 80%;
+	padding: 1.5rem;
+	color: rgb(64, 64, 64);
+}
+
+.degree-heading {
+	font-size: 2rem;
+}
+
+.university {
+	font-size: 1.5rem;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.degree-text {
+	margin-top: 2rem;
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+
+.degree-text span {
+	color: #66bfbf;
+	font-weight: 500;
+}
+
+/* Contact Me Styling */
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	padding: 5rem;
+}
+
+.contact__form-section {
+	width: 50%;
+	height: 100%;
+}
+
+.form__group:not(:last-child) {
+	margin-bottom: 1.5rem;
+}
+
+.form__input {
+	font-size: 1.5rem;
+	padding: 1rem 1.5rem;
+	border: 2px;
+	background-color: rgba(238, 238, 238, 0.3);
+	border: none;
+	font-family: inherit;
+	color: inherit;
+	border-bottom: 1px solid #66bfbf;
+	width: 90%;
+	display: block;
+	transition: all 0.3s;
+	margin: 0 auto;
+}
+
+.form__input::-webkit-input-placeholder {
+	color: gray;
+}
+
+.form__input::placeholder {
+	color: gray;
+}
+
+.form__input:focus:invalid {
+	border-bottom: 3px solid orange;
+}
+
+.form__input:focus {
+	outline: none;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+	border-bottom: 3px solid green;
+}
+
+.form__label {
+	font-size: 1.4rem;
+	font-weight: 300;
+	margin-left: 3rem;
+	margin-top: 1rem;
+	display: block;
+	transition: all 0.3s;
+}
+
+.form-input:placeholder-shown + .form-label {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-4rem);
+}
+
+.group-what-for {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.group-what-for p {
+	margin-bottom: 0.5rem;
+}
+
+.group-what-for .form__group {
+	margin-top: 1rem;
+	height: 0;
+	overflow: hidden;
+}
+
+.show-rate {
+	height: auto !important;
+}
+
+.submit-btn {
+	margin-left: 2.5rem;
+	padding: 1rem 3rem;
+	animation: none;
+	background-color: #66bfbf;
+	color: #fff;
+}
+
+.footer{
+    background: rgb(204, 241, 56);
+    width: 100%;
+    text-align: center;
+    padding:30px 0;
+}
+
+@media screen and (max-width: 700px) {
+	.mountain {
+		width: 70%;
+	}
+
+	.profile-card {
+		width: 12rem;
+	}
+
+	.heading-primary {
+		font-size: 4rem;
+		margin-top: 3rem;
+	}
+
+	.me-para {
+		font-size: 1.6rem;
+	}
+
+	.btn {
+		padding: 1rem 2rem;
+	}
+
+	.about-me {
+		flex-direction: column;
+		justify-content: center;
+		padding: 5rem 5rem 5rem 5rem;
+	}
+
+	.about-box {
+		width: 100%;
+	}
+
+	.info-box {
+		width: 100%;
+	}
+
+	.info-list li p {
+		width: 100%;
+	}
+
+	.contact__form-section {
+		width: 100%;
+	}
+
+	.education-heading {
+		font-size: 3rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.education-card {
+		flex-direction: column;
+	}
+
+	hr {
+		margin: 1rem auto;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.header-section {
+		height: 80vh;
+	}
+
+	.about-me {
+		padding: 5rem 2rem;
+	}
+
+	.education {
+		padding: 5rem 2rem;
+	}
+
+	.education-heading {
+		font-size: 2.5rem;
+	}
+
+	.contact {
+		padding: 3rem 2rem;
+		gap: 3rem;
+	}
+
+	.form-input {
+		margin: 0;
+		width: 100%;
+	}
+}
